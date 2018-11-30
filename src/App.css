@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #4A4A4A;
+}
+
+
+
+/* Header */
+.Header{
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.nav-groups {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px 80px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.nav-logo #nav-leesihoney {
+  font-size: 2em;
+  letter-spacing: -1.53px;
+}
+.nav-buttons {
+  min-width: 158px;
+  display: inline-grid;
+  float: left;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.25em;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+}
+.HeaderScrolled {
+  background: rgba(255,255,255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.05);
+}
+
+/* content  */
+.jumbotron {
+  max-width: 940px;
+  padding: 0 80px;
+  margin: 0 auto;
+  margin-top: 91px; /* 91px is the height of a navbar */
+  margin-bottom: 130px;
+}
+.side {
+  font-size: 2em;
+  color: #BABABA;
+  margin: 0;
+}
+
+.jumbotron .main {
+  margin: 0.4em 0;
+  font-size: 4em;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 120px;
+
+}
+
+#project-container {
+  width: max-content;
+}
+.project-component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  max-width: 940px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.project-pic {
+  width: 100%;
+}
+
+/* Centering the labels and a button vertically */
+.project-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-inc-position {
+  font-size: 1.25em;
+  color: #4A4A4A;
+}
+
+.project-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000000;
+  margin: 0.75em 0;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #000000;
+  margin-bottom: 29px;
+}
+
+.project-button{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #EBBB00;
+  font-size: 1em;
+  border: 1px solid #EBBB00;
+  padding: 10px 12px;
+  border-radius: 25px;
+  max-width: 144.47px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+
+}
+
+.project-button:hover{
+  background-color: #EBBB00;
+  color: white;
+}
+
+/* aboutme */
+
+.aboutme {
+  margin: 146px auto;
+  max-width: 940px;
+  padding: 0 80px;
+}
+.about-exp {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.about-leesihoney{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.about-hello{
+  margin: 0;
+  font-size: 1.25em;
+  color: #4A4A4A;
+}
+.about-andrew {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 600;
+}
+
+.about-introduction {
+  margin: 0;
+  font-size: 1.2em;
+  color: #000000;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.about-circles {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 100px;
+  margin-top: 93px;
+  max-width: 940px;
+  padding: 0 80px;
+  justify-items: center;
+  text-align: center;
+}
+
+/* Circle */
+.circle-title{
+  font-size: 2em;
+  color: #4A4A4A;
+  letter-spacing: -0.5px;
+}
+
+.circle-exp {
+  font-size: 1em;
+  color: #000000;
+}
+
+/* Project One */
+
+.pjone-jumbotron {
+  font-family: "Karla", sans-serif;
+  max-width: 940px;
+  padding: 0 80px;
+  margin: 120px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.pjone-jumbotron-exp{
+  display: flex;
+  z-index: 50;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -160px;
+}
+.pjone-jumbotron-exp-title {
+  font-size: 9em;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -8px;
+}
+
+.pjone-jumbotron-exp-paragraph {
+  margin-top: 80px;
+  font-size: 1em;
+  color: #4A4A4A;
+  line-height: 24px;
+  padding-left: 80px;
+  letter-spacing: -1.26px;
+}
+
+.project-content{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 80px;  
+}
+
+#project-date{
+  font-size: 1.5em;
+  color: #000000;
+  letter-spacing: -1.26px;
+  margin-bottom: 120px;
+}
+
+.pj-heading, .pj-research{
+  display: grid;
+  grid-template-columns: 45% 50%;
+  grid-column-gap: 5%;
+  margin-bottom: 120px;
+}
+
+.pj-heading-title, .pj-research-title{
+  font-size: 1.5em;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1.52px;
+}
+
+.pj-heading-paragraph, .pj-research-lists-ul {
+  font-size: 1em;
+  color: #000000;
+  letter-spacing: -0.55px;
+  line-height: 24px;
+}
+.pj-sketches{
+  display: grid;
+  grid-template-columns: 63.5% 35.5%;
+  grid-column-gap: 1%;
+  margin-bottom: 120px;
+
+}
+.pj-heading-image {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.pj-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-bottom: 20px;
+}
+.pj-image {
+  margin-bottom: 120px;
+}
+.pj-image-img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pj-images-grid{
+  margin-bottom: 100px;
+}
+
+.pj-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  margin-bottom: 120px;
+}
+
+.pj-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.pj-card-groups{
+  padding: 32px;
+}
+
+.pj-card-name{
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: -1.23px;  
+}
+
+.pj-card-info{
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: -1.23px; 
+  margin: 40px 0; 
+}
+
+.pj-heading-problem{
+  font-weight: 600;
+  font-size: 1em;
+}
+.pj-color-grid{
+  margin-bottom: 120px;
+}
+.pj-color-groups{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+}
+
+.color-cell {
+  text-align: center;
+}
+.color-grid-cell{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.pj-mobile-wireframe-grid, .pj-mobile-wireframe-video-grid {
+  margin-bottom: 120px;
+}
+
+.pj-mobile-wireframe-groups{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 30px;
+}
+
+.pj-mobile-wireframe-img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.pj-mobile-wireframe-video-groups{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.wireframe-video{
+  width: 100%;
+  text-align: center;
+}
+.video-caption{
+  margin: 10px 0;
+}
+.wireframe-video Video{
+  width: 100%;
+}
+
+.small-title{
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.vimeo-video {
+  display: flex;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.pj-vimeo-video{
+  margin: 0 auto;
+}
+.pj-image-caption{
+  text-align: center;
+  color: #4A4A4A;
+}
+
+.pj-quote{
+  font-weight: 600;
+  color: #4A4A4A;
+  font-style: italic;
+}
+
+.pj-interviews{
+  margin-bottom: 120px;
+}
+.pj-interview-question{
+  font-size: 1.5em;
+  letter-spacing: -1.5px;
+}
+.pj-interview-card{
+  display: grid;
+  padding: 25px 40px;
+  grid-template-columns: 10% 85%;
+  grid-column-gap: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.pj-interview-card-profile{
+  text-align: center;
+}
+.pj-interview-card-profile-pic, .pj-sketch-img, .pj-sketch-img-spotify {
+  width: 100%;
+}
+
+.pj-sketch-img-spotify{
+  margin: 0;
+  margin-bottom: 120px;
+}
+
+.pj-interview-card-profile-name{
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.pj-interview-cards{
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  margin: 40px 0;
+}
+.pj-interview-caption{
+  text-align: center;
+  color: #4A4A4A;
+  margin-bottom: 40px;
+}
+.pj-interview-card-answer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.pj-heading-list ul{
+  padding: 0;
+  margin: 0;
+}
+
+.pj-fidelities{
+  margin-bottom: 120px;
+}
+.pj-fidelities-group{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+
+.pj-fidelity img{
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.no-margin {
+  margin: 0;
+}
+.pj-prototypes{
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 60px;
+  margin-bottom: 120px;
+}
+.pj-prototype-title{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.pj-prototype-img-container{
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pj-prototype-caption{
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* buttons */
+.pj-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.pj-buttons-right{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 120px;
+}
+
+.pj-buttons-left{
+  display: flex;
+  justify-content: left;
+  margin-bottom:  120px;
+}
+
+.pj-left-button-groups, .pj-right-button-groups{
+  display: grid;
+  color: black;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+/* footer */
+
+.footer {
+  width: 100%;
+  display: block;
+  position: static;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-icons{
+  display: grid;
+  max-width: 185px;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px; 
+}
+
+.footer-groups {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.footer-copyright{
+  margin-top: 35px;
+  font-size: 1.25em;
+  color: #4A4A4A;
+}
+
+
+/* MEDIA QUERIES */
+
+/* On screens that are 992px or less, where the projects should be described a little smaller*/
+@media screen and (max-width: 992px) {
+  .jumbotron, .nav-groups, .project-component, .aboutme, .footer-groups, .pjone-jumbotron, .project-content, .about-circles{
+    max-width: 768px;
+  }
+
+  .project-title{
+    font-size: 1.7em;
+    line-height: 30px;
+  }
+
+  .project-description{
+    font-size: 0.8em;
+  }
+
+  
+  .project-button{
+    font-size: 1em;
+    padding: 8px 10px;
+  }
+
+  .pjone-jumbotron-exp-title {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  
+  .jumbotron-groups .main{
+    font-size: 3em;
+    margin: 12px 0;
+  }
+
+
+  .jumbotron-groups .side{
+    font-size: 1.5em;
+  }
+
+  .nav-logo img{
+    display: none
+  }
+  .nav-groups {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .Header {
+    font-size: 0.8em;
+  }
+
+  .project-component{
+    grid-template-columns: auto;
+  }
+
+  .project-right{
+    margin-top: 12px;
+  }
+
+  /* project view */
+  
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 10px;
+    text-align: center;
+  }
+  .jumbotron, .nav-groups, .project-component, .aboutme, .pjone-jumbotron, .project-content, .about-circles{
+    max-width: 240px;
+  }
+  .jumbotron .side{
+    font-size: 0.8em;
+    text-align: left;
+    line-height: 16px;
+  }
+
+  .jumbotron .main {
+    font-size: 1.2em;
+    text-align: left;
+    margin: 8px 0;
+
+  }
+  .Header {
+    font-size: 0.4em;
+  }
+
+  .nav-buttons {
+    max-width: 90px;
+  }
+
+  .main {
+    font-size: 10px;
+  }
+  .projects {
+    grid-row-gap: 80px;
+  }
+  .project-inc-position {
+    font-size: 10px;
+  }
+
+  .project-title{
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .project-button {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-description {
+    line-height: 18px;
+    margin: 10px auto;
+  }
+  .project-right {
+    margin-top: 0;
+  }
+  
+  .footer {
+    padding: 20px 0;
+  }
+  .footer-icons {
+    grid-column-gap: 10px;  
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

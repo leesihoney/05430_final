@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="34px" viewBox="0 0 18 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project" transform="translate(-404.000000, -6314.000000)" fill="#000000">
+            <g id="first_project" transform="translate(283.000000, 160.000000)">
+                <g id="project_buttons" transform="translate(121.000000, 6154.000000)">
+                    <g id="prev_button">
+                        <g id="back">
+                            <path d="M2.33254015,16.9991093 L17.7162403,1.64415571 C18.0945866,1.26651648 18.0945866,0.660868654 17.7162403,0.283229423 C17.3378941,-0.0944098077 16.7311124,-0.0944098077 16.3527662,0.283229423 L0.283759667,16.3222088 C-0.0945865556,16.6998481 -0.0945865556,17.3054959 0.283759667,17.6831351 L16.3527662,33.7149893 C16.53837,33.9002462 16.7882213,34 17.030934,34 C17.2736466,34 17.5234979,33.9073715 17.7091017,33.7149893 C18.0874479,33.33735 18.0874479,32.7317022 17.7091017,32.354063 L2.33254015,16.9991093 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
