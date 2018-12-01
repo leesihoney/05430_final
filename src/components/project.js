@@ -3,13 +3,6 @@ import React, { Component } from 'react';
 
 class Project extends Component {
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
-        }
-        this.props = props
-    }
  render() {
  return (
     <div className = "project-component">
