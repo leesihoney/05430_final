@@ -3,7 +3,7 @@ import Project from './project';
 class LandingPage extends Component {
     render() {
         return (
-            <section>
+            <div id = 'landing-page'>
                 <div className = 'jumbotron'>
                     <div className = 'jumbotron-groups'>
                         <h3 className = 'side'> Andrew Siheon Lee </h3>
@@ -18,7 +18,7 @@ class LandingPage extends Component {
                     <Project url='./project_two/#' company='LinkedIn Inc.' position='UX Design' title='LinkedIn Design Challenge' image = {require("../images/second_project_pic.png")} exp = "Design an experience that helps college students discover and connect to their classmates, without relying on email." />
                     <Project url='./project_three/#' company='Spotify Inc.' position='UX Design' title='Spotify UX Analysis and Redesign' image = {require("../images/third_project_pic.png")} exp = "I spent two weekends to take things apart, understand how Spotify works and try to improve the user experience. This practice is purely based on my own research and my personal usage." />
                 </div>
-            </section>
+            </div>
         )
     }
 }

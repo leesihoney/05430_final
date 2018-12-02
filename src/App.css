@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
+@keyframes PuiAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 
 body {
   margin: 0;
@@ -86,11 +98,21 @@ nav a{
 
 /* content  */
 .jumbotron {
-  max-width: 940px;
+  margin: 25% auto;
   padding: 0 80px;
-  margin: 0 auto;
-  margin-top: 91px; /* 91px is the height of a navbar */
-  margin-bottom: 130px;
+  animation: PuiAnimation;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.25, 1);
+}
+
+#landing-page{
+  max-width: 940px;
+  margin: 91px auto;
+  
+
 }
 .side {
   font-size: 2em;
@@ -114,15 +136,23 @@ nav a{
 }
 
 #project-container {
-  width: max-content;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 80px;
 }
+
 .project-component {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
   max-width: 940px;
-  padding: 0 80px;
   margin: 0 auto;
+  animation: PuiAnimation;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.25, 1);
 }
 
 .project-pic {
@@ -180,19 +210,24 @@ nav a{
   margin: 146px auto;
   max-width: 940px;
   padding: 0 80px;
+  animation: PuiAnimation;
+  animation-duration: 1.5s;
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.25, 1);
+}
+
+.about-pic img{
+  width: 100%;
 }
 .about-exp {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1.5fr 1fr;
+  grid-column-gap: 5%;
 }
 
-.about-leesihoney{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 0 80px;
-}
+
 
 .about-hello{
   margin: 0;
@@ -200,8 +235,7 @@ nav a{
   color: #4A4A4A;
 }
 .about-andrew {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 5% 0;
   font-size: 2em;
   color: #000000;
   font-weight: 600;
@@ -212,18 +246,21 @@ nav a{
   font-size: 1.2em;
   color: #000000;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 .about-circles {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-column-gap: 100px;
-  margin-top: 93px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10%;
+  margin-top: 20%;
   max-width: 940px;
-  padding: 0 80px;
   justify-items: center;
   text-align: center;
+}
+
+.about-circles img{
+  width: 100%;
 }
 
 /* Circle */
@@ -239,21 +276,36 @@ nav a{
 }
 
 /* Project One */
-
-.pjone-jumbotron {
-  font-family: "Karla", sans-serif;
+.pj-prototype-img img{
+  width: 100%;
+}
+.pj-row{
+  display: flex;
   max-width: 940px;
   padding: 0 80px;
-  margin: 120px auto;
+  margin: 0 auto;
+}
+.pjone-jumbotron {
+  font-family: "Karla", sans-serif;
+  margin: 20% auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  animation: PuiAnimation;
+  animation-duration: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.25, 1);
+}
+
+.pjone-jumbotron-img img{
+  width: 100%;
 }
 .pjone-jumbotron-exp{
   display: flex;
   z-index: 50;
   justify-content: center;
   flex-direction: column;
-  margin-left: -160px;
+  margin-left: -50%;
 }
 .pjone-jumbotron-exp-title {
   font-size: 9em;
@@ -263,18 +315,17 @@ nav a{
 }
 
 .pjone-jumbotron-exp-paragraph {
-  margin-top: 80px;
+  margin-top: 20%;
   font-size: 1em;
   color: #4A4A4A;
   line-height: 24px;
-  padding-left: 80px;
+  padding-left: 20%;
   letter-spacing: -1.26px;
 }
 
 .project-content{
-  max-width: 940px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 80px;  
 }
 
 #project-date{
@@ -286,8 +337,8 @@ nav a{
 
 .pj-heading, .pj-research{
   display: grid;
-  grid-template-columns: 45% 50%;
-  grid-column-gap: 5%;
+  grid-template-columns: 4fr 5fr;
+  grid-column-gap: 10%;
   margin-bottom: 120px;
 }
 
@@ -337,7 +388,7 @@ nav a{
 .pj-cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 4%;
   margin-bottom: 120px;
 }
 
@@ -367,12 +418,14 @@ nav a{
   font-size: 1em;
 }
 .pj-color-grid{
+  width: 100%;
   margin-bottom: 120px;
 }
 .pj-color-groups{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 1.5%;
+  width: 100%;
 }
 
 .color-cell {
@@ -391,7 +444,7 @@ nav a{
 .pj-mobile-wireframe-groups{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-column-gap: 30px;
+  grid-column-gap: 2%;
 }
 
 .pj-mobile-wireframe-img {
@@ -402,7 +455,7 @@ nav a{
 .pj-mobile-wireframe-video-groups{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
+  grid-column-gap: 2%;
 }
 .wireframe-video{
   width: 100%;
@@ -500,7 +553,7 @@ nav a{
 .pj-fidelities-group{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 1%;
 }
 
 .pj-fidelity img{
@@ -563,10 +616,13 @@ nav a{
 
 .footer {
   width: 100%;
-  display: block;
-  position: static;
   text-align: center;
-  padding: 50px 0;
+  padding: 10% 0;
+}
+
+.footer-groups {
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .footer-icons{
@@ -577,13 +633,9 @@ nav a{
   grid-column-gap: 20px; 
 }
 
-.footer-groups {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 80px;
-}
 
 .footer-copyright{
+  width: 100%;
   margin-top: 35px;
   font-size: 1.25em;
   color: #4A4A4A;
@@ -593,9 +645,14 @@ nav a{
 /* MEDIA QUERIES */
 
 /* On screens that are 992px or less, where the projects should be described a little smaller*/
-@media screen and (max-width: 992px) {
-  .jumbotron, .nav-groups, .project-component, .aboutme, .footer-groups, .pjone-jumbotron, .project-content, .about-circles{
-    max-width: 768px;
+@media screen and (max-width: 1100px) {
+
+  .jumbotron {
+    margin-bottom: 90px;
+  }
+
+  .nav-groups, #landing-page, #project-container, .footer-groups, .aboutme{
+    padding: 20px 60px;
   }
 
   .project-title{
@@ -616,16 +673,33 @@ nav a{
   .pjone-jumbotron-exp-title {
     font-size: 6em;
   }
+  .about-hello {
+    font-size: 1.1em;
+  }
+  .about-introduction{
+    font-size: 1em;
+  }
+  .about-introduction{
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
-  
+  #landing-page {
+    margin: 40px auto;
+  }
+  .jumbotron {
+    text-align: center;
+    width: 400px;
+    margin: 3 0px auto;
+    padding: 0;
+  }
   .jumbotron-groups .main{
     font-size: 3em;
     margin: 12px 0;
   }
-
 
   .jumbotron-groups .side{
     font-size: 1.5em;
@@ -638,45 +712,73 @@ nav a{
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
-  .footer {
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+  .nav-buttons {
+    justify-items: right;
   }
+
   .Header {
     font-size: 0.8em;
   }
 
   .project-component{
     grid-template-columns: auto;
+
   }
 
   .project-right{
     margin-top: 12px;
   }
+  .pjone-jumbotron-exp-title {
+    font-size: 4em;
+  }
 
   /* project view */
-  
+  .aboutme {
+    margin: 10% auto;
+  }
+  .about-exp {
+    grid-template-columns: auto;
+
+  }
+
+  .about-andrew {
+    font-size: 1.5em;
+  }       
+  .about-circles {
+    grid-template-columns: auto;
+    grid-row-gap: 5%;
+  }
+  .about-introduction{
+    font-size: 1em;
+  }
+  .about-introduction{
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
 }
+
+
 
 @media screen and (max-width: 420px) {
   body {
     font-size: 10px;
-    text-align: center;
   }
-  .jumbotron, .nav-groups, .project-component, .aboutme, .pjone-jumbotron, .project-content, .about-circles{
-    max-width: 240px;
+
+  #landing-page, .about-me {
+    margin: 20px auto;
+  }
+
+  .jumbotron {
+    width: 200px;
+    margin: 40px auto;
   }
   .jumbotron .side{
     font-size: 0.8em;
-    text-align: left;
     line-height: 16px;
   }
 
   .jumbotron .main {
     font-size: 1.2em;
-    text-align: left;
     margin: 8px 0;
 
   }
@@ -718,9 +820,6 @@ nav a{
     margin-top: 0;
   }
   
-  .footer {
-    padding: 20px 0;
-  }
   .footer-icons {
     grid-column-gap: 10px;  
   }
@@ -728,5 +827,29 @@ nav a{
   .footer-copyright {
     font-size: 10px;
     line-height: 16px;
+  }
+
+  .pjone-jumbotron-exp {
+    margin-left: -200%;
+    text-align: left;
+
+  }
+  .pj-heading{
+    grid-template-columns: auto;
+    margin-bottom: 3em;
+  }
+
+  .pj-heading-paragraph {
+    margin-top: 2em;
+  }
+  .pj-interview-card {
+    grid-template-columns: auto;
+    text-align: center;
+    padding: 3em auto;
+
+  }
+
+  .pj-interview-card-answer {
+    padding: 3em auto;
   }
 }

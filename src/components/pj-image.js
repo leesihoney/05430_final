@@ -9,6 +9,7 @@ class PjImage extends Component {
                     {this.props.caption}
                 </div>
             </div>
+
         )
     }
 }

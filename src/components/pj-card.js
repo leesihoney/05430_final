@@ -22,6 +22,7 @@ class PjCard extends Component {
                     </div>
                 </div>
             </div>
+            
         )
     }
 }

@@ -12,6 +12,7 @@ class PjHeading extends Component {
                     {this.props.paragraph}
                 </div>
             </div>
+
         )
     }
 }
