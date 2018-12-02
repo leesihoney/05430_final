@@ -9,7 +9,7 @@ import ProjectThree from './project_three';
 
 const Main = () => (
     <Switch>
-        <Route exact path="/" render={ (routerProps) => < Home routerProps={routerProps} setUpGame={this.setUpGame} component={LandingPage} />
+        <Route exact path="/" component={LandingPage} />
         <Route path="/aboutme" component = {AboutMe} />
         <Route path="/project_one" component = {ProjectOne} />
         <Route path="/project_two" component = {ProjectTwo} />
