@@ -13,7 +13,7 @@
     "react-router-scroll-top": "^0.1.1",
     "react-scripts": "2.1.1"
   },
-  "homepage": "http://leesihoney.github.io/",
+  "homepage": "http://leesihoney.github.io/05430_final/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
